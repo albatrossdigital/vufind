@@ -10,6 +10,7 @@ before_script:
   - pear channel-discover pear.phing.info
   - pear install phing/phing
   - composer global require fabpot/php-cs-fixer
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - phpenv rehash
 
 script:
